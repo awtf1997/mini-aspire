@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "f5192420-c3b7-4f88-8500-ac696ee6009a",
+		"name": "Mini Aspire Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"abc\",\r\n    \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/login/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"login",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"abc\",\r\n    \"password\" : \"123456789\",\r\n    \"role\" : \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/login/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"login",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Loans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE2ODUwODg5NTYsImlhdCI6MTY4NTA4ODY1Nn0.W30nKZtQKhNDctiOjmi7K_sbHer8GwhiTSTQ_DT8cg66JN24imX2SzisBuDAe4_JocurVruIhDHihZ5MQu0fFA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/loan/abc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"loan",
+						"abc"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "abc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apply For Loan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE2ODUwOTE4MTcsImlhdCI6MTY4NTA5MTUxN30.JOnJ-_so9D_WvG4qnZ3HjYuy122Vsjmw8YlGiFzQTTnpBVuW2WVWdtb3DP9xbXqLySLbEpo5wWp8p9hSXkxrsw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"abc\",\r\n    \"loanAmount\" : 5000,\r\n    \"term\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/loan/apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"loan",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate Loan",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE2ODUwOTE4MTcsImlhdCI6MTY4NTA5MTUxN30.JOnJ-_so9D_WvG4qnZ3HjYuy122Vsjmw8YlGiFzQTTnpBVuW2WVWdtb3DP9xbXqLySLbEpo5wWp8p9hSXkxrsw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"abc\",\r\n    \"loanIds\" : [1, 2, 3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/loan/activate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"loan",
+						"activate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Repay Loan",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE2ODUwOTIxOTcsImlhdCI6MTY4NTA5MTg5N30.V6ZNYt8d5ab6zqALhFxPdj57DrFvPMY_8VPUWMRcTsgPyknNN0JlHgxAT-gMExwMewADx4A3Mju7jm1GyizQBA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"abc\",\r\n    \"loanId\" : 1,\r\n    \"repaymentAmount\" : 2000 \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/mini-aspire/loan/repay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"mini-aspire",
+						"loan",
+						"repay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
