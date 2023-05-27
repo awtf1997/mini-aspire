@@ -33,7 +33,7 @@ public class LoanServiceImpl implements LoanService {
 
 	@Autowired
 	private LoanRepository loanRepository;
-
+	
 	@Override
 	public UserLoans getLoansOfUser(String username) {
 		// TODO Auto-generated method stub
