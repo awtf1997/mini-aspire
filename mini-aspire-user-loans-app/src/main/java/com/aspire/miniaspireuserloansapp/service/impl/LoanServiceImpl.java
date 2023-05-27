@@ -135,7 +135,7 @@ public class LoanServiceImpl implements LoanService {
 					if (loan.getRemainingTerm().intValue() > 0) loan.setRepayments(loan.getRepayments() + "/");
 					loan = loanRepository.save(loan);
 					LoanDto loanDto = new LoanDto(userFromRequest.getUsername(), loan.getDisbersedAmount(), 
-							loan.getRepayedAmount(), loan.getTotalTerm(), loan.getRemainingTerm(), loan.getIsActive());
+					loan.getRepayedAmount(), loan.getTotalTerm(), loan.getRemainingTerm(), loan.getIsActive());
 					loanDto.setEmis(loan.getEmiDates(), loan.getRepayments());
 					repaymentResponse = new LoanRepaymentResponse(true, loanDto, LoanConstants.LOAN_REPAYMENT_SUCCESS);
 				}
