@@ -241,3 +241,9 @@ Response JSON - {
     },
     "message": "LOAN REPAYMENT SUCCESS"
 }
+
+
+**Steps to run the application**
+1) Clone the repo to local directory
+2) Go to the ./mini-aspire-user-loans-app/target directory
+3) Run the command "java -jar mini-aspire-user-loans-app-0.0.1-SNAPSHOT.jar" 
