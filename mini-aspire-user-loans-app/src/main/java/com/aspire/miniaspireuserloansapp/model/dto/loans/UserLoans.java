@@ -4,7 +4,7 @@ import java.util.List;
 
 public class UserLoans {
 	
-	private String usename;
+	private String username;
 	
 	private List<LoanDto> loans;
 	
@@ -15,19 +15,19 @@ public class UserLoans {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserLoans(String usename, List<LoanDto> loans, String message) {
+	public UserLoans(String username, List<LoanDto> loans, String message) {
 		super();
-		this.usename = usename;
+		this.username = username;
 		this.loans = loans;
 		this.message = message;
 	}
 
-	public String getUsename() {
-		return usename;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUsename(String usename) {
-		this.usename = usename;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public List<LoanDto> getLoans() {

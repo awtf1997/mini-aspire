@@ -32,6 +32,6 @@ public class LoanConstants {
 	
 	public static final String REPAYMENT_AMOUNT_MORE_THAN_REMAINING_AMOUNT = "REPAYMENT AMOUNT MORE THAN REMAINING AMOUNT";
 	
-	public static final String  LOAN_REPAYMENT_SUCCESS = "LOAN REPAYMENT SUCCESS";
+	public static final String LOAN_REPAYMENT_SUCCESS = "LOAN REPAYMENT SUCCESS";
 	
 }
