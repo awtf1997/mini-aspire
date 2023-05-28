@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.aspire.miniaspireuserloansapp.unittests.service.impl.AuthServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in com.aspire.miniaspireuserloansapp.unittests.service.impl.AuthServiceImplTest
