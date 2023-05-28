@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aspire.miniaspireuserloansapp.MiniAspireUserLoansAppApplicationTests" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.131" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -67,5 +67,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="contextLoads" classname="com.aspire.miniaspireuserloansapp.MiniAspireUserLoansAppApplicationTests" time="0"/>
+  <testcase name="testRepayLoan_RepayLoan1_Fail_UserDifferentAndNotAnAdmin" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.071"/>
+  <testcase name="testApplyForNewLoan_Success" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.004"/>
+  <testcase name="testGetLoansOfUser_FetchFail_ThrowExceptionWhenTryingToFetchUserData" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.004"/>
+  <testcase name="testApproveLoans_Fail_ThrowExceptionWhilePersistingLoanId2Approval" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.006"/>
+  <testcase name="testGetLoansOfUser_FetchSuccess" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.006"/>
+  <testcase name="testRepayLoan_RepayLoan1_Fail_InvalidLoanId" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.004"/>
+  <testcase name="testRepayLoan_RepayLoan1_Fail_RepaymentAmountLessThanEmi" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.004"/>
+  <testcase name="testRepayLoan_RepayLoan1_Fail_ThrowExceptionWhenPersistingLoanRepayment" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.003"/>
+  <testcase name="testRepayLoan_RepayLoan1_Fail_RepaymentAmountMoreThanRemainingEmi" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.005"/>
+  <testcase name="testGetLoansOfUser_FetchFail_ThrowExceptionWhenTryingToFetchLoanData" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.004"/>
+  <testcase name="testApplyForNewLoan_Fail_ThrowExceptionWhenTryingToFetchUserData" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.003"/>
+  <testcase name="testApplyForNewLoan_Fail_ThrowExceptionWhenTryingToPersistLoanData" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.003"/>
+  <testcase name="testApproveLoans_Success" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.003"/>
+  <testcase name="testRepayLoan_RepayLoan1_Success" classname="com.aspire.miniaspireuserloansapp.unittests.service.impl.LoanServiceImplTest" time="0.003"/>
 </testsuite>

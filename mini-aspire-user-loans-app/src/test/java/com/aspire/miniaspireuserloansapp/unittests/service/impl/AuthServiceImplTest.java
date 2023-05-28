@@ -1,4 +1,4 @@
-package com.aspire.miniaspireuserloansapp.service.impl;
+package com.aspire.miniaspireuserloansapp.unittests.service.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -22,6 +22,7 @@ import com.aspire.miniaspireuserloansapp.model.dto.authentication.RegistrationRe
 import com.aspire.miniaspireuserloansapp.model.dto.authentication.RegistrationResponse;
 import com.aspire.miniaspireuserloansapp.model.entity.User;
 import com.aspire.miniaspireuserloansapp.repository.UserRepository;
+import com.aspire.miniaspireuserloansapp.service.impl.AuthServiceImpl;
 import com.aspire.miniaspireuserloansapp.utils.JwtTokenUtil;
 
 @ExtendWith(MockitoExtension.class)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aspire.miniaspireuserloansapp.MiniAspireUserLoansAppApplicationTests" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.501" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -67,5 +67,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="contextLoads" classname="com.aspire.miniaspireuserloansapp.MiniAspireUserLoansAppApplicationTests" time="0"/>
+  <testcase name="testGetLoans" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.237"/>
+  <testcase name="testApplyNewLoan" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.03"/>
+  <testcase name="testApproveNewLoanByNonAdmin" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.013"/>
+  <testcase name="testApproveNewLoanByAdmin" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.066"/>
+  <testcase name="testRepayLoanByUser_AmountLessThanEMI" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.024"/>
+  <testcase name="testRepayLoanByUser_AmountMoreThanRemainingAmount" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.025"/>
+  <testcase name="testRepayLoanByUserDifferentFromLoanuserAndNotAnAdmin" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.038"/>
+  <testcase name="testRepayLoanByUser" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.023"/>
+  <testcase name="testRepayLoanByUserThroughAnAdmin" classname="com.aspire.miniaspireuserloansapp.integrationtests.LoanFlowTests" time="0.024"/>
 </testsuite>
