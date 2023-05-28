@@ -2,8 +2,8 @@
 mini-aspire app
 It is an app that allows authenticated users to go through a loan application.
 
-**Architecture**
-
+**Requirements**
+1) Java JDK17
 
 **1) Customer Registration:**
 Customer needs to register with mini-aspire before being able to login to the application.
