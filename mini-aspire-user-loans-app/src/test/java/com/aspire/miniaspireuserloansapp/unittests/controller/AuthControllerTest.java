@@ -1,4 +1,4 @@
-package com.aspire.miniaspireuserloansapp.controller;
+package com.aspire.miniaspireuserloansapp.unittests.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -17,6 +17,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import com.aspire.miniaspireuserloansapp.constants.AuthConstants;
+import com.aspire.miniaspireuserloansapp.controller.AuthController;
 import com.aspire.miniaspireuserloansapp.model.dto.authentication.AuthenticationRequest;
 import com.aspire.miniaspireuserloansapp.model.dto.authentication.AuthenticationResponse;
 import com.aspire.miniaspireuserloansapp.model.dto.authentication.RegistrationRequest;

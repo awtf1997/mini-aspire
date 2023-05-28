@@ -1,4 +1,4 @@
-package com.aspire.miniaspireuserloansapp.controller;
+package com.aspire.miniaspireuserloansapp.unittests.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -22,6 +22,7 @@ import org.springframework.http.ResponseEntity;
 
 import com.aspire.miniaspireuserloansapp.constants.AuthConstants;
 import com.aspire.miniaspireuserloansapp.constants.LoanConstants;
+import com.aspire.miniaspireuserloansapp.controller.LoanController;
 import com.aspire.miniaspireuserloansapp.model.dto.loans.LoanApplicationRequest;
 import com.aspire.miniaspireuserloansapp.model.dto.loans.LoanApplicationResponse;
 import com.aspire.miniaspireuserloansapp.model.dto.loans.LoanApprovalRequest;
