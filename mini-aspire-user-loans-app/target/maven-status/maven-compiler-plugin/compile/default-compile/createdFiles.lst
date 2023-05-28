@@ -10,7 +10,6 @@ com\aspire\miniaspireuserloansapp\controller\LoanController.class
 com\aspire\miniaspireuserloansapp\model\dto\authentication\RegistrationRequest.class
 com\aspire\miniaspireuserloansapp\model\dto\loans\LoanApplicationResponse.class
 com\aspire\miniaspireuserloansapp\model\dto\loans\LoanApplicationRequest.class
-com\aspire\miniaspireuserloansapp\configuration\SwaggerConfig.class
 com\aspire\miniaspireuserloansapp\service\impl\LoanServiceImpl.class
 com\aspire\miniaspireuserloansapp\service\impl\AuthServiceImpl.class
 com\aspire\miniaspireuserloansapp\constants\LoanConstants.class

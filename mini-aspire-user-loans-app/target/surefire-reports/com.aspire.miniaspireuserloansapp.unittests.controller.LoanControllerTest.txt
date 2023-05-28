@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.aspire.miniaspireuserloansapp.unittests.controller.LoanControllerTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in com.aspire.miniaspireuserloansapp.unittests.controller.LoanControllerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 s - in com.aspire.miniaspireuserloansapp.unittests.controller.LoanControllerTest
