@@ -1,1 +1,7 @@
+com\aspire\miniaspireuserloansapp\integrationtests\AuthenticationFlowTests.class
+com\aspire\miniaspireuserloansapp\unittests\service\impl\AuthServiceImplTest.class
+com\aspire\miniaspireuserloansapp\unittests\controller\LoanControllerTest.class
+com\aspire\miniaspireuserloansapp\integrationtests\LoanFlowTests.class
+com\aspire\miniaspireuserloansapp\unittests\service\impl\LoanServiceImplTest.class
 com\aspire\miniaspireuserloansapp\MiniAspireUserLoansAppApplicationTests.class
+com\aspire\miniaspireuserloansapp\unittests\controller\AuthControllerTest.class
