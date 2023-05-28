@@ -247,3 +247,22 @@ Response JSON - {
 1) Clone the repo to local directory
 2) Go to the ./mini-aspire-user-loans-app/target directory
 3) Run the command "java -jar mini-aspire-user-loans-app-0.0.1-SNAPSHOT.jar" 
+
+**Alternatively, if client wants to build the project themselves**
+1) Install maven build tool in the local system
+2) Clone the repo to local directory
+3) Go to the ./mini-aspire-user-loans-app directory
+4) Run the command "mvn clean compile install ."
+5) A ./target directory will be created. Go inside the /target directory.
+6) Run the command "java -jar mini-aspire-user-loans-app-0.0.1-SNAPSHOT.jar"
+
+**Points for enhancement**
+1) Currently password is being sent to auth apis in its raw form. With the inclusion of a UI, password can be encrypted before hitting auth apis.
+2) Role based loan access/retrieval: ADMINs are allowed to access all the loans but CUSTOMER roles are only allowed to access their own loans.
+3) Maker/Checker implementation for role application and approval: 
+    Currently an ADMIN can 
+    a) Approve a loan created by someone else
+    b) Create a loan and approve the same loan. 
+    This behaviour can be enhanced by implementing a maker-checker system, where the person creating the loan request is not allowed to approve the loan request and vice-versa.
+
+
