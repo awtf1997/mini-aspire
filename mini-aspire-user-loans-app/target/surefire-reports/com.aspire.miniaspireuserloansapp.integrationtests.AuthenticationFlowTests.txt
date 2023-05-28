@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.aspire.miniaspireuserloansapp.integrationtests.AuthenticationFlowTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.574 s - in com.aspire.miniaspireuserloansapp.integrationtests.AuthenticationFlowTests
